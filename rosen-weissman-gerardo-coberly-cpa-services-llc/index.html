@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosen, Weissman, Gerardo &amp; Coberly, CPA Services, LLC — Accountant Services</title>
+<meta name="description" content="Your trusted accountant partner in FL 33629.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf7;--bg-alt:#f0efe8;--surface:#fff;--text:#1c1c1a;--text-2:#5c5c56;--text-m:#8a8a82;--accent:#4f46e5;--accent-d:#4338ca;--accent-l:#e0e7ff;--accent-glow:#4f46e526;--border:rgba(0,0,0,.06);--border-s:rgba(0,0,0,.1);--sh-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.03);--sh-md:0 4px 20px rgba(0,0,0,.06);--sh-lg:0 12px 40px rgba(0,0,0,.08);--sh-xl:0 24px 60px rgba(0,0,0,.1);--r:16px;--r-lg:24px;--r-full:100px;--ease:cubic-bezier(.16,1,.3,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.7;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.ctr{max-width:1200px;margin:0 auto;padding:0 24px}
+
+.preview-banner{position:fixed;top:0;left:0;right:0;z-index:9999;background:var(--text);color:rgba(255,255,255,.9);text-align:center;padding:10px 24px;font-size:13px;font-weight:500}
+.preview-banner a{color:#4f46e5;font-weight:700}
+
+nav{position:fixed;top:40px;left:0;right:0;z-index:1000;padding:0 24px}
+.nav-in{max-width:1200px;margin:0 auto;background:rgba(255,255,255,.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid var(--border);border-radius:var(--r-full);padding:0 8px 0 28px;height:60px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--sh-md)}
+.nav-logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:800;color:var(--text);letter-spacing:-.02em}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:8px;list-style:none}
+.nav-links a{color:var(--text-2);font-size:.875rem;font-weight:500;padding:8px 16px;border-radius:var(--r-full);transition:all .2s var(--ease)}
+.nav-links a:hover{color:var(--text);background:var(--bg-alt)}
+.nav-cta{background:var(--accent)!important;color:#fff!important;padding:10px 24px!important;font-weight:600!important;box-shadow:0 2px 12px var(--accent-glow)}
+.nav-cta:hover{background:var(--accent-d)!important;transform:translateY(-1px);box-shadow:0 4px 20px #4f46e54d!important}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center}
+.nav-toggle span{display:block;width:20px;height:2px;background:var(--text);border-radius:2px;margin:5px auto}
+@media(max-width:768px){
+  .nav-toggle{display:flex;flex-direction:column}
+  .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(30px);flex-direction:column;justify-content:center;gap:8px;transform:translateY(-100%);opacity:0;pointer-events:none;transition:all .5s var(--ease);padding:24px}
+  .nav-links.active{transform:translateY(0);opacity:1;pointer-events:all}
+  .nav-links a{font-size:1.5rem;padding:16px 24px}
+}
+
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:140px 0 100px}
+.hero-bg{position:absolute;inset:0;background:url('https://mike32snake.github.io/swf-images/accountant/hero-1.png') center/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.92) 0%,rgba(250,250,247,.85) 50%,#e0e7ffcc 100%)}
+.hero-content{position:relative;z-index:1;max-width:720px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-l);color:var(--accent);padding:8px 20px;border-radius:var(--r-full);font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:28px}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.8rem,6vw,4.5rem);font-weight:800;line-height:1.05;letter-spacing:-.035em;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{font-size:clamp(1.05rem,2vw,1.2rem);color:var(--text-2);max-width:520px;margin-bottom:40px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:var(--r-full);font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600;border:none;cursor:pointer;transition:all .3s var(--ease);white-space:nowrap}
+.btn-p{background:var(--accent);color:#fff;box-shadow:0 4px 16px var(--accent-glow)}
+.btn-p:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:0 8px 30px #4f46e54d}
+.btn-o{background:transparent;color:var(--text);border:1.5px solid var(--border-s)}
+.btn-o:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-l)}
+
+.stats-strip{position:relative;z-index:2;margin-top:-60px;padding:0 24px}
+.stats-in{max-width:900px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:36px 48px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;box-shadow:var(--sh-lg);text-align:center}
+.stat-v{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:var(--accent);line-height:1;letter-spacing:-.02em}
+.stat-v .stars{color:#e8b931;font-size:1.2rem;margin-left:4px}
+.stat-l{font-size:.8rem;font-weight:500;color:var(--text-m);text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+@media(max-width:600px){.stats-in{grid-template-columns:1fr;padding:28px 24px;gap:24px}}
+
+section{padding:120px 0}
+@media(max-width:768px){section{padding:80px 0}}
+.s-label{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:16px}
+.s-label::before{content:'';width:24px;height:1.5px;background:var(--accent)}
+.s-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px}
+.s-sub{font-size:1.05rem;color:var(--text-2);max-width:540px;line-height:1.7}
+
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:56px}
+.svc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:all .4s var(--ease)}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--sh-xl);border-color:transparent}
+.svc-card.feat{grid-row:span 2}
+.svc-img{width:100%;height:220px;object-fit:cover}
+.svc-card.feat .svc-img{height:280px}
+.svc-body{padding:28px 28px 32px}
+.svc-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:.7rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.svc-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.02em;margin-bottom:10px}
+.svc-body p{font-size:.92rem;color:var(--text-2);line-height:1.7}
+@media(max-width:768px){.svc-grid{grid-template-columns:1fr}.svc-card.feat{grid-row:span 1}}
+
+.about-s{background:var(--bg-alt)}
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px}
+.about-img{width:100%;height:480px;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--sh-lg)}
+.about-content h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.8rem;font-weight:700;letter-spacing:-.02em;margin-bottom:20px;line-height:1.2}
+.about-content p{font-size:.95rem;color:var(--text-2);margin-bottom:20px;line-height:1.8}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.about-feat{display:flex;align-items:flex-start;gap:12px}
+.about-feat-ico{width:36px;height:36px;flex-shrink:0;background:var(--accent-l);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--accent);font-weight:700}
+.about-feat span{font-size:.85rem;font-weight:600;line-height:1.4;padding-top:8px}
+@media(max-width:768px){.about-g{grid-template-columns:1fr;gap:40px}.about-img{height:300px}.about-feats{grid-template-columns:1fr}}
+
+.areas-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.area-tag{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-full);padding:10px 22px;font-size:.85rem;font-weight:500;color:var(--text-2);transition:all .25s var(--ease)}
+.area-tag:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-l)}
+
+.cta-s{background:var(--text);color:#fff;text-align:center;padding:100px 0;position:relative;overflow:hidden}
+.cta-s::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 100%,#4f46e533,transparent),radial-gradient(ellipse 40% 40% at 80% 0%,#4f46e526,transparent)}
+.cta-s .ctr{position:relative;z-index:1;max-width:640px}
+.cta-s h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px}
+.cta-s p{color:rgba(255,255,255,.65);font-size:1.05rem;margin-bottom:36px}
+.cta-s .btn-p{background:#fff;color:var(--text);box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.cta-s .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.contact-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:32px;text-align:center;transition:all .3s var(--ease)}
+.contact-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg);border-color:transparent}
+.contact-ico{width:52px;height:52px;margin:0 auto 16px;background:var(--accent-l);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.contact-card h4{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-m);margin-bottom:8px}
+.contact-card p{font-size:1rem;font-weight:600}
+.contact-card a{color:var(--accent)}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+
+.footer{background:var(--text);color:rgba(255,255,255,.5);padding:40px 0}
+.footer-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:rgba(255,255,255,.8)}
+.footer-logo span{color:var(--accent)}
+.footer-copy{font-size:.8rem}
+.footer-link{color:rgba(255,255,255,.4);font-size:.8rem}
+
+.powered-by{background:var(--bg-alt);text-align:center;padding:14px;font-size:.78rem;color:var(--text-m)}
+.powered-by a{color:var(--accent);font-weight:600}
+
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.stagger>.fade-up:nth-child(1){transition-delay:0s}
+.stagger>.fade-up:nth-child(2){transition-delay:.1s}
+.stagger>.fade-up:nth-child(3){transition-delay:.15s}
+.stagger>.fade-up:nth-child(4){transition-delay:.2s}
+</style>
+</head>
+<body>
+
+<div class="preview-banner">
+  This is a preview — ready to make it yours? Reply to the email or text Mike at <a href="sms:+17863510609">(786) 351-0609</a>
+</div>
+
+<nav>
+  <div class="nav-in">
+    <a href="#" class="nav-logo">Rosen,<span>Weissman, Gerardo &amp; Coberly, CPA Services, LLC</span></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:8132880434" class="nav-cta">Call (813) 288-0434</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="ctr">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">Certified Financial Professionals</div>
+      <h1 class="fade-up">Rosen, Weissman, Gerardo &amp;amp; Coberly, CPA Services, LLC, <em>built to last.</em></h1>
+      <p class="hero-sub fade-up">Your trusted accountant partner in FL 33629.</p>
+      <div class="hero-actions fade-up">
+        <a href="tel:8132880434" class="btn btn-p"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(813) 288-0434</a>
+        <a href="#services" class="btn btn-o">View Services →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stats-in">
+    <div class="stat-item fade-up"><div class="stat-v">4.9 <span class="stars">★</span></div><div class="stat-l">Google Rating</div></div>
+    <div class="stat-item fade-up"><div class="stat-v">79+</div><div class="stat-l">Verified Reviews</div></div>
+    <div class="stat-item fade-up"><div class="stat-v">100%</div><div class="stat-l">Satisfaction</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="ctr">
+    <div class="s-label fade-up">What We Do</div>
+    <h2 class="s-title fade-up">Expert Accountant Services</h2>
+    <p class="s-sub fade-up">Professional accountant services tailored to your needs in FL 33629.</p>
+    <div class="svc-grid stagger">
+      <div class="svc-card feat fade-up">
+        <img class="svc-img" src="https://mike32snake.github.io/swf-images/accountant/svc-1.png" alt="Tax Preparation" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-num">01 — Tax Preparation</div>
+          <h3>Tax Preparation</h3>
+          <p>Accurate, efficient tax preparation for individuals and businesses. We maximize your deductions and minimize stress.</p>
+        </div>
+      </div>
+      <div class="svc-card fade-up">
+        <img class="svc-img" src="https://mike32snake.github.io/swf-images/accountant/svc-2.png" alt="Bookkeeping" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-num">02 — Bookkeeping</div>
+          <h3>Bookkeeping</h3>
+          <p>Clean, organized books that give you a clear picture of your business finances. Monthly or quarterly service.</p>
+        </div>
+      </div>
+      <div class="svc-card fade-up">
+        <img class="svc-img" src="https://mike32snake.github.io/swf-images/accountant/svc-3.png" alt="Business Advisory" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-num">03 — Business Advisory</div>
+          <h3>Business Advisory</h3>
+          <p>Strategic financial guidance to help your business grow. Budgeting, forecasting, and proactive tax planning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-s" id="about">
+  <div class="ctr">
+    <div class="s-label fade-up">About Us</div>
+    <h2 class="s-title fade-up">FL 33629's full-service accountant partner.</h2>
+    <div class="about-g">
+      <img class="about-img fade-up" src="https://mike32snake.github.io/swf-images/accountant/about-1.png" alt="Rosen, Weissman, Gerardo &amp; Coberly, CPA Services, LLC" loading="lazy">
+      <div class="about-content">
+        <h3 class="fade-up">Why Rosen, Weissman, Gerardo &amp; Coberly, CPA Services, LLC</h3>
+        <p class="fade-up">Rosen, Weissman, Gerardo &amp;amp; Coberly, CPA Services, LLC provides professional accountant services in the FL 33629 area. We are committed to quality work, honest pricing, and outstanding customer service. With a 4.9-star rating from 79 reviews, our track record speaks for itself.</p>
+        <div class="about-feats fade-up">
+          <div class="about-feat"><div class="about-feat-ico">✓</div><span>Licensed & Insured</span></div>
+          <div class="about-feat"><div class="about-feat-ico">✓</div><span>Free Estimates</span></div>
+          <div class="about-feat"><div class="about-feat-ico">✓</div><span>Experienced Team</span></div>
+          <div class="about-feat"><div class="about-feat-ico">✓</div><span>Satisfaction Guarantee</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-s">
+  <div class="ctr">
+    <h2 class="fade-up">Ready to get started?</h2>
+    <p class="fade-up">Contact us today for a free estimate. No obligation, no pressure — just great work for your property.</p>
+    <div class="fade-up"><a href="tel:8132880434" class="btn btn-p"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (813) 288-0434</a></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="ctr">
+    <div class="s-label fade-up">Get In Touch</div>
+    <h2 class="s-title fade-up">Let's talk about your project.</h2>
+    <p class="s-sub fade-up">Reach out anytime — we'd love to hear from you.</p>
+    <div class="contact-grid stagger">
+      <div class="contact-card fade-up"><div class="contact-ico">📞</div><h4>Phone</h4><p><a href="tel:8132880434">(813) 288-0434</a></p></div>
+      <div class="contact-card fade-up"><div class="contact-ico">📍</div><h4>Address</h4><p>3709 W Jetton Ave, Tampa, FL 33629, USA</p></div>
+      <div class="contact-card fade-up"><div class="contact-ico">🕐</div><h4>Hours</h4><p>Mon–Fri: 8AM–6PM<br>Sat: 9AM–2PM</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="ctr">
+    <div class="footer-in">
+      <div class="footer-logo">Rosen,<span>Weissman, Gerardo &amp; Coberly, CPA Services, LLC</span></div>
+      <div class="footer-copy">&copy; 2026 Rosen, Weissman, Gerardo &amp; Coberly, CPA Services, LLC. All rights reserved.</div>
+      <a href="tel:8132880434" class="footer-link">(813) 288-0434</a>
+    </div>
+  </div>
+</footer>
+
+<div class="powered-by">Website by <a href="https://mamv.co/websites" target="_blank">MAMV Web Design</a> — Professional websites for local businesses</div>
+
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-up').forEach(e=>o.observe(e));
+</script>
+</body>
+</html>
